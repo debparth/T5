@@ -26,7 +26,7 @@ app.post('/add', (req, res) => {
   }
   const newUser = { id: uuidv4(), email, firstName };
   users.push(newUser);
-  res.status(201).json({ message: "User added", success: true, user: newUser });
+  res.status(201).json({ message: "User added", success: true });
 });
 
 app.put('/update/:id', (req, res) => {
